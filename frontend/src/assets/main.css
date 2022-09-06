@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Alata";
+    src: local("Alata"), url("/public/fonts/Alata.ttf") format("truetype"), url("/public/fonts/Alata.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-ExtraBold";
+    src: local("Gilroy-ExtraBold"), url("/public/fonts/Gilroy-ExtraBold.ttf") format("truetype"), url("/public/fonts/Gilroy-ExtraBold.woff2") format("woff2");
+}
+
+:root {
+    --mns-primary-color: rgb(255, 98, 33);
+    --mns-primary-color-opacity: hsla(18, 100%, 56%, 0.3);
+    --mns-gradient-color: linear-gradient(#313e74, #151b36);
+    --mns-text-color: hsl(0, 0%, 100%);
+    --mns-text-color-opacity: hsla(0, 0%, 100%, 0.5);
+}
