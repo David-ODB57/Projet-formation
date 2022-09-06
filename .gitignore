@@ -26,3 +26,6 @@
 ./backend/LMS.png
 ./backend/*.sqlite3
 ./backend/MDP
+
+# Screenshot
+./img/
