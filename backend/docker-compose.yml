@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:  
+  frontend:
+    container_name: frontend
+    restart: always
+    build:
+      context: .
+      dockerfile: ./dockerfiles/vuejs/Dockerfile
+    volumes:
+      - ./frontend:/app/:rw
+    ports:
+      - "8080:8080"
+    expose:
+      - 8080
+    depends_on:
+      - backend
+
+  backend:
+    container_name: backend
+    restart: always
+    build:
+      context: .
+      dockerfile: ./dockerfiles/django/Dockerfile
+    volumes:
+      - ./backend:/app
+      - django-static:/app/static
+    ports:
+      - "8000:8000"
+    expose:
+      - 8000
+
+volumes:
+  django-static:
+
+# networks:
+

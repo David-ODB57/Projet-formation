@@ -1,0 +1,45 @@
+{% extends 'dashboard/admin/base.html' %}
+
+{% block body %}
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-12 mb-3">
+    <div class="col-12 mb-3">
+    <div id="content-wrapper">
+        <div class="container-fluid">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#" style="color: #999965; font-weight: bold; letter-spacing: 10px">Gestionnaire Utilisateurs</a>
+                </li>
+            </ol>
+            <div class="card mb-3">
+                <div class="card-header">
+                    <i class="fas fa-table text-warning"></i>
+                    A propos de {{ object.username }}
+                </div>
+                <div class="card-body">
+                    {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }} alert-dismissible" role="alert">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+
+                    <div class="row">
+                        <div class="col-12">
+                            <form method="post">
+                                {% csrf_token %}
+                                <div class="alert alert-warning" role="alert">
+                                    Etes-vous sûr de vouloir supprimer l'utilisateur {{ object }} ?
+                                </div>
+                                <input type="submit" class="btn btn-danger" value="Supprimer"/>
+                                <a class="btn btn-success" href="{% url 'aluser' %}">Abandonner</a>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
