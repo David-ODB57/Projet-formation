@@ -52,7 +52,7 @@ router.beforeEach((to, from, next) => {
       next();
     } else {
       next({
-        path: "/login",
+        path: "/api/login",
         params: { nextUrl: to.fullPath },
       });
     }
