@@ -1,6 +1,23 @@
-# Projet-formation
+# LMS - plateforme de Formation
 ![My Image](img/LMS.png)
 
-This is a prototype developped in few days for my final exam during my training at **MNS**.
-It was made with the help of **Youness LANDROIT** :wink: who was in charge for the **Django backend**.
-I added the **Django RESTFRAMEWORK Api** to link the **Vue JS** frontend I developped.
+## Qu'est ce que c'est ?
+Ceci est un prototype développé en quelques jours pour l'examen final de ma formation à **MNS**.
+Il a été conçu et réalisé avec **Django** et **Django REST Framwork** pour la partie backend et **VueJS** pour la partie frontend.
+
+## Framework utilisés
+ - Django pour le backend.
+ 
+ - Django REST Framework pour l'API.
+ 
+ - VueJS pour le frontend.
+ 
+
+## Deploiement
+### Notes
+Initialement prévu pour être totalement déployé sur AWS. Le temps a manqué pour le faire.
+Seul le backend avec son back-office était accessible depuis AWS où une instance EC2 hébergait dans un container Docker l'image du backend.
+Il n'est plus accessible à l'heure actuelle.
+
+Il a été réalisé avec l'aide de **Youness LANDROIT** qui s'est occupé de la partie backend en partie et du back-office.
+J'ai réalisé la partie API de Django et la partie frontend.
