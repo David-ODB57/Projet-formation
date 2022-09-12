@@ -2,7 +2,7 @@
 ![My Image](img/LMS.png)
 
 ## Qu'est ce que c'est ?
-Ceci est un prototype développé en quelques jours pour l'examen final de ma formation à **MNS**.
+Ceci est un prototype développé en quelques jours pour l'examen final de ma formation à **![MNS - Metz Numeric School](https://www.metz-numeric-school.fr/fr)**.
 Il a été réalisé avec l'aide de **Youness LANDROIT** qui s'est occupé de la partie backend en partie et du back-office.
 J'ai réalisé la partie API de Django et la partie frontend.
 
