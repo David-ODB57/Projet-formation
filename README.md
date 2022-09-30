@@ -19,3 +19,7 @@ J'ai réalisé la partie API de Django et la partie frontend.
 Initialement prévu pour être totalement déployé sur AWS. Le temps a manqué pour le faire.
 Seul le backend avec son back-office était accessible depuis AWS où une instance EC2 hébergait dans un container Docker l'image du backend.
 Il n'est plus accessible à l'heure actuelle.
+Pour plus de facilité, l'utilisation de sqlLite a été préféré, étant déjà disponible avec Django.
+
+### Avenir
+Il faudrait revoir le projet pour l'aboutir sur une version définitive.
